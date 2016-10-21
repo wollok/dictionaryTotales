@@ -50,7 +50,7 @@ class Reporter {
 			acum.put(rendicion.fecha(), total)
 			acum
 		})
-		
+		 
 	method mostrarTotalesPorFecha() {
 		self.totalPorFecha().forEach({ fecha, total =>
 			console.println(fecha.toString() + " - $ " + total)
