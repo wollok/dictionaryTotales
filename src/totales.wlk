@@ -10,9 +10,6 @@ class Rendicion {
 		total = _total
 	}
 
-	method persona() = persona
-	method total() = total
-	method fecha() = fecha	
 }
 
 class Reporter {
