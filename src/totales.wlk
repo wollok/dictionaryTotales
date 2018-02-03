@@ -1,8 +1,8 @@
 class Rendicion {
 	
-	var persona
-	var fecha
-	var total
+	const property persona
+	const property fecha
+	const property total
 	
 	constructor(_persona, _fecha, _total) {
 		persona = _persona
