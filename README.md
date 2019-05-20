@@ -1,4 +1,7 @@
 # Ejemplo de uso de Dictionary para totalizar
+ 
+[![Build Status](https://travis-ci.org/wollok/dictionaryTotales.svg?branch=master)](https://travis-ci.org/wollok/dictionaryTotales)
+
 
 Tenemos una serie de rendiciones de gastos de 
 
