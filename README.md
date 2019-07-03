@@ -16,7 +16,6 @@ Tenemos una serie de rendiciones de gastos de
 
 ## Conceptos que vemos
 
-* Constructores con parámetros para facilitar la instanciación de cada rendición
 * Objetos fecha
 * Objetos Dictionary para totalizar por un criterio u otro
 * Dado que el test es engorroso elegimos mostrar por consola REPL los resultados
@@ -29,10 +28,10 @@ Tenemos una serie de rendiciones de gastos de
 Juan - $ 470
 Ricky - $ 550
 >>> reporter.mostrarTotalesPorFecha()
-Date[2016-09-21] - $ 250
-Date[2016-10-19] - $ 50
-Date[2016-10-20] - $ 120
-Date[2016-10-21] - $ 600
+a Date[day = 1, month = 7, year = 2019] - $ 50
+a Date[day = 2, month = 7, year = 2019] - $ 120
+a Date[day = 3, month = 6, year = 2019] - $ 250
+a Date[day = 3, month = 7, year = 2019] - $ 600
 ```
 
 ## Warning
@@ -40,12 +39,11 @@ Si no reutilizamos la misma referencia a la fecha de hoy, los totales por fecha 
 
 ```scala
 >>> reporter.mostrarTotalesPorFecha()
-Date[2016-09-21] - $ 250
-Date[2016-10-19] - $ 50
-Date[2016-10-20] - $ 120
-Date[2016-10-21] - $ 500
-Date[2016-10-21] - $ 100
+a Date[day = 3, month = 6, year = 2019] - $ 250
+a Date[day = 1, month = 7, year = 2019] - $ 50
+a Date[day = 2, month = 7, year = 2019] - $ 120
+a Date[day = 3, month = 7, year = 2019] - $ 500
+a Date[day = 3, month = 7, year = 2019] - $ 100
 ```
-
 
 Esto es por la definición de equals para Date que se ve utilizado en Dictionary.
