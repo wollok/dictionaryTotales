@@ -28,22 +28,8 @@ Tenemos una serie de rendiciones de gastos de
 Juan - $ 470
 Ricky - $ 550
 >>> reporter.mostrarTotalesPorFecha()
-a Date[day = 1, month = 7, year = 2019] - $ 50
-a Date[day = 2, month = 7, year = 2019] - $ 120
-a Date[day = 3, month = 6, year = 2019] - $ 250
-a Date[day = 3, month = 7, year = 2019] - $ 600
+5/18/2024 - $ 600
+4/18/2024 - $ 250
+5/17/2024 - $ 120
+5/16/2024 - $ 50
 ```
-
-## Warning
-Si no reutilizamos la misma referencia a la fecha de hoy, los totales por fecha no sumarizan:
-
-```scala
->>> reporter.mostrarTotalesPorFecha()
-a Date[day = 3, month = 6, year = 2019] - $ 250
-a Date[day = 1, month = 7, year = 2019] - $ 50
-a Date[day = 2, month = 7, year = 2019] - $ 120
-a Date[day = 3, month = 7, year = 2019] - $ 500
-a Date[day = 3, month = 7, year = 2019] - $ 100
-```
-
-Esto es por la definición de equals para Date que se ve utilizado en Dictionary.

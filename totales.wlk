@@ -24,6 +24,7 @@ class Reporter {
 			totales.put(rendicion.persona(), total)}
 		return totales
 	}
+
 //  Variante con fold	
 //	method totalPorCliente() =
 //		rendiciones.fold(new Dictionary(), { acum, rendicion => 
@@ -47,7 +48,8 @@ class Reporter {
 			totales.put(rendicion.fecha(), total)
 		}
 		return totales
-	}	 
+	}
+
 //  Variante con fold	
 //	method totalPorFecha() =
 //		rendiciones.fold(new Dictionary(), { acum, rendicion => 
